@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    background-color: #eee;
+    border: none;
+    box-shadow: 10px 10px 10px gray;
+}
+
+h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    text-align: center;
+    color: orange;
+}
+
+p {
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.rojo{
+    background-color: #f0d3c4;
+}
+
+.amarillo{
+    background-color: #f0ecc4;
+}
+
+.azul{
+    background-color: #c4ecf0;
+}
+
+.morado{
+    background-color: #ecc4f0;
+}
+
+li{
+    color: #0a4f04;
+}
+
+ul{
+    margin-left: 30px;
+}
+
+#altar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.foto {
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.objeto {
+    object-fit: contain;
+}
+
+.flor {
+    object-fit: contain;
+}
+
+.vela {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.calavera {
+    object-fit: contain;
+}
+
+#fotos {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#objetos {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#flores {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#velas {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#calaveritas {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto:hover, .objeto:hover {
+    transform: scale(1.1);
+}
+
+.calavera:hover {
+    cursor: pointer;
+}
